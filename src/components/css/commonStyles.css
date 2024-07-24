@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=TT+Commons:wght@400;700&display=swap');
+/* 
+*{
+    outline: 1px solid red;
+} */
+/*normal input fields for multistep form*/
+.commonInput-mform{
+    border-radius: 5px;
+    padding: 12px 16px;
+   /* width: 100%; */
+    display: block;
+    caret-color: rgb(26, 145, 240);
+    background-color: rgba(21, 21, 198, 0.151);
+    outline: none;
+    border: 0px;
+    color: rgb(30, 37, 50);
+    transition: color 0.1s ease 0s;
+    overflow: visible;
+    font-family: inherit;
+}
+.big-input-mform{
+    width: 300px;
+}
+.small-input-mform{
+    width:150px;
+    gap:auto;
+}
+
+/*description boxes*/
+.description-box-mform{
+    display: flex;
+    width:657px;
+    max-width: 657px;
+    height:200px;
+    overflow:auto;
+    overflow: hidden;
+}
+
+.inputHeading-mform{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(70, 79, 102);
+}
+
+.two-input-fields-mform{
+    display: flex;
+   /* justify-content:space-between;*/
+    gap:53px;
+}
+.four-input-fields-mform{
+    display: flex;
+   /* justify-content:space-between;*/
+    gap:19px;
+}
+
+.mform-inputfield{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .major-heading-mform{
+    color:#4d4d4d;
+    font-size: 1.4em;
+    padding-bottom: 13px;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    border-bottom: 0px;
+} */
+
+/*AddButton*/
+.add-button-mform {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 14px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(234, 246, 255, 0);
+    color: rgb(26, 145, 240);
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.15s ease 0s;
+    line-height: 20px;
+    position: relative;
+}
+
+.add-button-mform svg {
+    fill: currentColor; /* Ensure the SVG uses the button's text color */
+    flex:none;
+}
+
+.add-button-mform:hover {
+    background-color: rgba(234, 246, 255, 0.1); /* Slight background color change on hover */
+}
+
+.sociAL-input-mform{
+    width: 100%;
+}
+
+/*Delete button*/
+.section-delete-button-mform {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    padding-right: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4d4d4d; 
+}
+
+.section-delete-button-mform i {
+    font-size: 20px; 
+}
+
+.section-delete-button-mform:hover {
+    color: #666; /* Slightly lighter color on hover */
+}
+
+
+/*Accordian*/
+
+.major-heading-mform {
+    width: 100%;
+    color:rgb(25, 40, 51);
+    font-size: 1.4em;
+    padding-bottom: 13px;
+    padding-left: 7px;
+    margin-bottom: 0px;
+    margin-top: 8px;
+    padding-top: 7px;
+    text-transform: uppercase;
+    border: 1px solid rgb(6, 2, 36);
+    border-radius:7px;
+    position: relative; /* Ensure the accordion icon positioning */
+    cursor: pointer; /* Make it clickable */
+
+    /* Accordion specific styles */
+    display: inline-block; /* Ensure inline display for correct positioning */
+    background-color: rgba(102, 117, 234, 0.692);
+}
+h2 .major-heading-mform{
+    border-bottom: none;
+}
+.major-heading-mform::before {
+    --chevron-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath fill='%23ffd700' d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z'/%3E%3C/svg%3E");
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 0.65rem;
+    aspect-ratio: 320 / 512;
+    display: inline-block;
+    margin-right: 0.75rem;
+    transform: translateY(-7%) rotate(0deg);
+    transition: transform var(--slide-ease) var(--slide-duration) var(--slide-delay);
+    mask-image: var(--chevron-icon);
+    mask-size: 100% 100%;
+    -webkit-mask-image: var(--chevron-icon);
+    -webkit-mask-size: 100% 100%;
+    background-color: currentColor;
+}
+
+.major-heading-mform:hover::before {
+    transform: translateY(-7%) rotate(0deg);
+}
+
+.major-heading-mform:focus-visible {
+    outline: none;
+}
+
+/* Specific color changes for the accordion */
+.major-heading-mform::after {
+    --circle-bg: #312e2e;
+}
+
+.major-heading-mform:hover::after {
+    --circle-bg: #ffd700; /* Yellow color */
+}
+
+.major-heading-mform:focus-visible::after {
+    --circle-bg: #0000ff; /* Blue color */
+}

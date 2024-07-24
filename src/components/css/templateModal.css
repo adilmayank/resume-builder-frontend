@@ -1,0 +1,59 @@
+/* template modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hsla(0, 17%, 94%, 0.923);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: rgb(216, 224, 230);;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.template-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    height: 100%;
+    max-height: calc(60vh - 60px); /* Adjust height as necessary */
+    scrollbar-width: none;
+}
+.template-options::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers (e.g., Chrome, Safari) */
+}
+
+.template-option {
+    width: 250px;
+    height: 300px;
+    
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.template-img {
+    
+    
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* UI */
+
+.fixed-container {
+  width: inherit; /* Fixed width */
+  max-height: inherit; /* Fixed height */
+  /* margin: 5px auto;
+  border: 1px solid #ccc; */
+  margin-top: 0px;
+  overflow-y: auto; /* Enable vertical scroll if content exceeds height */
+  padding: 10px; /* Adjust as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack containers vertically */
+  align-items: center; /* Center-align items horizontally */
+}
+/* Reduce line height */
+.fixed-container p {
+  line-height: 1.1; /* Adjust as needed */
+}
+
+/* Decrease font size */
+.fixed-container p {
+  font-size: 0.8em; /* Adjust as needed */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.fixed-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.fixed-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Responsive font size */
+@media (max-width: 600px) {
+  .resume-container {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .resume-container {
+    font-size: 0.85em;
+  }
+}
+
+@media (min-width: 801px) {
+  .resume-container {
+    font-size: 0.9em;
+  }
+}
+
+/* Resume Container */
+.resume-container {
+  width: 90%; /* Full width of the fixed container */
+  font-family: 'Arial, Helvetica, sans-serif';
+  color: #333;
+  line-height: 1;
+  font-size: 0.8em; /* Smaller base font size */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Name */
+#name {
+  font-weight: 200;
+  font-family: 'Arial, Helvetica, sans-serif';
+  color: #000;
+  text-transform: capitalize;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-links a,
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 3px;
+  font-size: 0.7em;
+}
+
+.social-links a:hover,
+.contact-info a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.section {
+  margin-bottom: 2px;
+}
+
+.section-title {
+  border-bottom: 1.5px solid #000000cd;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  font-size: 1em;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.918);
+  font-weight: 400;
+}
+p.section-title {
+  margin: 12px 0 3px 0;
+}
+
+.edu-subsection,
+.exp-section,
+.project-section,
+.certificate-section,
+.responsibility-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-section h3,
+.project-section h3,
+.certificate-section h3,
+.responsibility-section h3 {
+  font-size: 0.78em;
+  margin: 0;
+  color: #000;
+}
+
+.edu-subsection p,
+.project-section p,
+.certificate-section p,
+.responsibility-section p {
+  margin: 0 3px 0px 0;
+  font-style: italic;
+  font-size: 0.7em;
+  white-space: pre-wrap;
+}
+
+.exp-section p {
+  margin: 0;
+  font-size: 0.7em;
+  white-space:pre-wrap;
+}
+
+
+#insti-name {
+  font-family: 'Arial, Helvetica, sans-serif';
+  font-weight: 600;
+  font-size: 0.75em;
+  white-space: normal; /* Wrap text to next line if it exceeds container width */
+}
+
+@media (max-width: 600px) {
+  #insti-name {
+    font-size: 0.8em; /* Decrease font size for smaller screens */
+  }
+}
+
+/* Education Section */
+.edu-subsection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edu-subsection .edu-dates {
+  text-align: right;
+  flex: 1;
+  font-style: italic;
+  color: #2c2b2b;
+}
+
+.edu-dates {
+  font-weight: 600;
+  color: #2c2b2b;
+}
+
+.edu-cgpa {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.left-section-details {
+  width: calc(100% - 80px);
+}
+
+/* Project Section */
+#project-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 135px);
+}
+
+.dates {
+  text-align: right;
+  font-style: italic;
+  color: #2c2b2b;
+  font-size: 0.7em;
+}
+.project-details {
+  width: max-content;
+}
+
+.project-section a {
+  color: #000; /* Black color */
+  text-decoration: underline; /* Underline */
+  font-size: 0.8em;
+  margin-top: 2px;
+}
+
+.project-section a:hover {
+  text-decoration: underline;
+  color: blue; /* Blue color on hover */
+}
+
+ul {
+  list-style: disc;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1px;
+}
+
+ul li strong {
+  font-weight: bold;
+}
+
+.achievement-section p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.4em;
+  padding-bottom: 5px;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+}
+
+h2:after {
+  content: '';
+  display: block;
+  width: 100%;
+  /*border-bottom: 1px solid #000;*/
+  margin-top: -1px;
+}
+
+.divider {
+  border-bottom: 1px solid #000;
+  margin: 1px 0;
+}
+
+/* Skills Section */
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li::before,
+.achievements-list li::before {
+  content: '\2022'; /* Use a bullet character */
+  color: #555; /* Color of the bullet */
+  font-size: 0.6em; /* Smaller font size */
+  margin-right: 5px; /* Space between bullet and text */
+}
+
+.skills-list strong {
+  font-size: 0.75em;
+  color: #000000e3;
+  font-family: 'Arial, Helvetica, sans-serif';
+}
+
+.skills-list span {
+  font-size: 0.72em;
+  color: #555;
+  font-style: italic;
+}
+
+ul.skills-list,
+.achievements-list {
+  margin: 2px 0;
+}
+
+.resumeSubHeadingListStart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+/* Experience Section */
+.exp-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.3em;
+}
+
+.exp-title,
+.responsibility-title {
+  font-size: 0.8em;
+  color: #000000e3;
+  font-family: 'Arial, Helvetica, sans-serif';
+}
+
+.exp-dates {
+  text-align: right;
+  flex: 1;
+  font-style: italic;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: #2c2b2b;
+}
+
+.exp-description small,
+.responsibility-description small {
+  font-size: 0.7em;
+}
+
+/* Project */
+.project-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.3em;
+}
+
+.project-title {
+  font-size: 0.9em; /* Increased size */
+  color: #000000e3;
+  font-family: 'Arial, Helvetica, sans-serif';
+}
+
+.project-title h3 {
+  margin: 0;
+}
+
+.project-description {
+  margin-top: 0.3em;
+  font-style: normal;
+}
+
+.project-description p {
+  margin: 0;
+  font-size: 0.7em;
+  font-style: normal;
+  white-space:inherit;
+}
+
+/* Position of Responsibility */
+.responsibility-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.responsibility-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.3em;
+}
+
+.responsibility-title .responsibility-designation,
+.exp-designation {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.responsibility-dates {
+  text-align: right;
+  flex: 1;
+  font-style: italic;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: #2c2b2b;
+}
+.responsibility-description,.project-description, .exp-description{
+  white-space: pre-wrap;
+}
+/* Certificates Section */
+.certificate-section {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 1px; */
+}
+
+.certificate-section h3 {
+  color: #000000e3;
+  font-family: 'Arial, Helvetica, sans-serif';
+  margin: 0 0 3px 0;
+}
+
+.certificate-section a {
+  color: #000; /* Black color */
+  text-decoration: underline; /* Underline */
+  font-size: 0.8em; /* Consistent font size */
+}
+
+.certificate-section a:hover {
+  color: blue; /* Blue color on hover */
+}
+
+.achievements-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.achievements-list li::before {
+  content: '\2022'; /* Use a bullet character */
+  color: #555; /* Color of the bullet */
+  font-size: 0.9em; /* Smaller font size */
+  margin-right: 5px; /* Space between bullet and text */
+  font-style: normal;
+}
+
+.achievement-section {
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: flex-start;
+}
+
+.achievement-section p,
+.certificate-section p {
+  font-size: 0.7em;
+  color: #000;
+  font-style: normal;
+  margin: 0;
+  white-space:pre-wrap;
+}
+
+@media print {
+  @page {
+    width: 816px;
+    height: 1056px;
+  }
+
+  .resume-container {
+    width: 90%;
+    margin: auto;
+    font-size: 1.2em;
+    margin-top: 30px;
+  }
+
+  #name {
+    font-weight: 200;
+    font-family: 'Arial, Helvetica, sans-serif';
+    color: #000;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 5px; /* Add this line for additional bottom margin if needed */
+  }
+
+  .fixed-container {
+    padding: 10px; /* Maintain padding for print */
+  }
+}

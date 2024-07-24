@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --base-font-size: 1vw;
+  --base-padding: 1vw;
+  --base-margin: 1vw;
+}
+
+#resume-page {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  margin: inherit;
+  max-height: auto; 
+  font-family: 'Raleway', sans-serif;
+  overflow-y: auto; /* Enable vertical scroll if content exceeds height */
+  line-height: 0.95;
+  background-color: #f7f6f6;
+}
+/* Hide scrollbar for Chrome, Safari, and Opera */
+#resume-page::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+#resume-page {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+
+
+.tenure{
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+#sidebar {
+  flex: 1;
+  background-color: #6d695c;
+  background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px), linear-gradient(60deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1)), linear-gradient(120deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1));
+  color: white;
+  padding: 20px;
+  max-width: 250px;
+}
+
+#imageCircle {
+  width: 150px;
+  height: 150px;
+  border: 6px solid white;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  background-color: #6d695c;
+  overflow: hidden; /* Ensure the image stays within the circle */
+  flex-shrink: 1;
+}
+#imageCircle img {
+  width: 100%; /* Ensures the image takes up the full width of the circle */
+  height: auto; /* Maintains aspect ratio */
+}
+
+#nameDetails {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left:15px;
+ font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+#name-t4 {
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.divider {
+  width: 180px;
+  margin: auto;
+}
+
+#profile {
+  font-size: 0.7em;
+}
+
+#contact {
+  margin-bottom: 20px;
+}
+
+.phone,
+.email,
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.8em;
+  overflow: hidden;
+    max-width: 210px;
+}
+
+.icon {
+  font-size: 0.8em;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+#profileOverview {
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+#profileOverview p {
+  margin-right: 9px;
+  font-size: 0.6em;
+  text-align:unset;
+  margin-top: 5px;
+  margin-left: 9px;
+  line-height: normal;
+  font-weight: 100;
+  white-space: pre-wrap;
+}
+
+
+#skillSet {
+  text-align: center;
+}
+
+#skillSet ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.6em;
+  margin-top: 10px;
+
+}
+
+#skillSet li {
+  margin-bottom: 5px;
+}
+
+#mbody {
+  flex: 2;
+  padding: 20px;
+}
+
+.education,
+.experience,
+.certifications,
+.links {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.timeline {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  left: 23px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #6d695c;
+}
+
+.eduDetails {
+  margin-left: 20px;
+}
+
+.eduTitle {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.circle {
+  position: absolute;
+  left: -3px;
+  top: 0px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.eduTitle ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.eduTitle .child-1 span {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.eduTitle .child-2 span {
+  color: #6d695c;
+  font-weight: bold;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+.eduTitle .child-3 span {
+  font-weight: bold;
+font-size: 0.75em;
+font-style: italic;
+}
+svg {
+  flex: 1 0 1em;
+}
+
+#sidebar a{
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  text-align: center;
+  line-height: normal;
+}
+#sidebar a:hover{
+  color:rgb(212, 212, 26);
+}
+#sidebar span{
+  font-size: 0.8em;
+  margin-right: 30px;
+  /* text-align: center; */
+  
+}
+
+#paragraph-t4{
+  font-weight: normal;
+  font-size: 0.7em;
+  line-height: 5px;
+  white-space: pre-wrap;
+}
+#paragraph-1, #paragraph-2 {
+  font-weight: normal;
+  font-size: 0.7em;
+  white-space: pre-wrap;
+}
+
+
+#linked-title{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: black;
+}
+
+#project-link{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #6d695c;
+}
+#project-link:hover{
+  color:rgb(226, 226, 33);
+}
+
+
+#Achievements{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.achievement-section-t4 p{
+  margin-right: 9px;
+  font-size: 0.8em;
+  text-align:justify;
+  margin-top: 5px;
+  margin-left: 25px;
+  margin-right: auto;
+  font-weight: 100;
+}
+
+#Achievements {
+  text-align: center;
+}
+
+#Achievements ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.6em;
+  margin-top: 10px;
+
+}
+#linked-title:hover{
+  color:rgb(226, 226, 33);
+}
+
+.email{
+  overflow: hidden;
+    max-width: 180px;
+}
+
+#email-t4 {
+
+  hyphens: auto;
+  /* width: 60px; */
+  /* overflow: hidden; */
+  /* flex-grow: 0; */
+  /* flex-grow: 0; */
+  /* flex-shrink: 0; */
+  /* flex-basis: calc(100% - 40px); */
+  width: 100%;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  max-width: 140px;
+  
+}
+
+
+@media print{
+  #linked-title:hover{
+    color:rgb(226, 226, 33);
+  }
+  #sidebar a:hover{
+    color:rgb(212, 212, 26);
+  }
+  #project-link:hover{
+    color:rgb(226, 226, 33);
+  }
+  
+}

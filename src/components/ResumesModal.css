@@ -1,0 +1,86 @@
+/* modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content2 {
+    background: rgb(216, 224, 230);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    overflow: auto;
+     position: relative;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    max-height: 300px; 
+}
+
+.l2modal {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.l2modal:hover {
+    background: #f0f0f0;
+}
+
+/* confirmation overlay */
+.confirmation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+}
+
+.confirmation-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.template-heading-mform {
+    color: #4d4d4d;
+    font-size: 1.4em;
+    padding-bottom: 13px;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    border-bottom: none;
+    position: relative; /* Ensure the accordion icon positioning */
+    cursor: pointer; /* Make it clickable */
+
+    /* Accordion specific styles */
+    display: inline-block; /* Ensure inline display for correct positioning */
+}
+
+.template-heading-mform .fa-trash-o {
+    margin-left: 30px; /* Adjust the margin as needed */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}

@@ -1,0 +1,111 @@
+/* Styles for the ProfileName component */
+.t2-profile-name {
+  font-size: 1.5rem; /* text-3xl */
+  font-weight: 800; /* font-medium */
+  max-width: 120%; /* max-w-90 */
+  overflow: hidden; /* overflow-hidden */
+  text-overflow: ellipsis; /* overflow-ellipsis */
+  white-space: nowrap; /* whitespace-nowrap */
+}
+
+/* Styles for the SectionHeading component */
+.t2-custom-section-heading {
+  position: relative;
+  margin-bottom: 0.5rem; /* mb-2 */
+  font-size: 1.0rem; /* text-base */
+  font-weight: 800; /* font-medium */
+}
+
+.t2-custom-section-heading::before {
+  content: '';
+  width: 100%;
+  border-bottom: 3px solid #9eb2e4;
+  position: absolute;
+  bottom: -0.1em;
+}
+
+/* Styles for the SectionList component */
+.t2-section-list {
+  font-size: 0.75rem; /* text-xs */
+  margin-top: 0.125rem; /* mt-0-5 */
+}
+
+/* Styles for the SectionSubtitle component */
+.t2-custom-subtitle {
+  font-size: 0.875rem;
+  font-weight: 400;
+   margin-top: 5px;
+  margin-bottom: 10px; 
+}
+
+/* Styles for the SectionText component */
+.t2-section-text {
+  font-size: 0.875rem; /* text-sm */
+  padding-top: 0.15rem; /* py-1-5 */
+  padding-bottom: 0.275rem; /* py-1-5 */
+  margin-bottom: 0.2px;
+}
+
+/* Styles for the SectionTitle component */
+.t2-custom-section-title {
+  font-size: 0.75rem;
+  font-weight: 550;
+  margin-top: 0px;
+  margin-bottom:5px;
+
+}
+
+/* Styles for the ProfileContact component */
+.t2-profile-contact {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 400; /* font-normal */
+}
+
+/* Additional global styles */
+.t2-relative {
+  position: relative;
+}
+
+.t2-mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.t2-text-base {
+  font-size: 1rem;
+}
+
+.t2-social-link {
+    
+    cursor: pointer;
+    text-decoration: underline;
+}
+.t2-container{
+  display: flex;
+  justify-content: space-between; /* Justify between */
+  align-items: center;           /* Align items in center vertically */
+  padding: 0.5rem;  
+}
+.t2-contact-container {
+  display: flex;
+  gap: 0.75rem; /* Gap of 3 units */
+}
+
+.t2-flex {
+  display: flex;
+}
+
+.t2-gap-3 {
+  gap: 0.75rem;
+}
+
+.t2-intro-link a {
+  color: inherit; /* This will make the link inherit the color of its parent */
+  text-decoration: none; /* This will remove the underline */
+  display: flex;
+  align-items: center;
+}
+.t2-wrapper{
+   max-height: calc(100vh - 40px); /* Adjust the value to fit your layout */
+  overflow-y: auto;
+  padding: 20px;
+}
